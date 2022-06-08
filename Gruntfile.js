@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  const sass = require('sass');
 
   grunt.initConfig({
     watch: {
@@ -14,8 +15,9 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-         style: 'expanded'
-       },
+          implementation: sass,
+          style: 'expanded'
+        },
         files: {
           'dist/dist.css': 'src/main.scss'
         }
@@ -25,7 +27,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
 
   grunt.registerTask('default', ['sass']);
 };
