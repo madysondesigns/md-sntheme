@@ -1,0 +1,15 @@
+{
+  "identifier": "com.madysondesigns.md-sntheme",
+  "name": "MD SN theme",
+  "content_type": "SN|Theme",
+  "area": "themes",
+  "version": "0.0.1",
+  "url": "http://localhost:8002/dist/dist.css",
+  "latest_url": "http://localhost:8002/dist/dist.css",
+  "dock_icon": {
+    "type": "circle",
+    "background_color": "#D0021B",
+    "foreground_color": "#ffffff",
+    "border_color": "#D0021B"
+  }
+}
